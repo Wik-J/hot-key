@@ -1,7 +1,7 @@
-function fn(){
-
+function fn() {
+  
 }
 
-function a(){
-  
+function a() {
+  console.log('123');
 }

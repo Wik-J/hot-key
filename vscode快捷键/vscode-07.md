@@ -1,4 +1,5 @@
 # 插件snippets的使用
+- 快速打出模版代码
 
 ## 插件
 - JavaScript (ES6) code snippets

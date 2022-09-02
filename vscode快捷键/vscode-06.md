@@ -1,4 +1,5 @@
 # git 快捷键
+- 可视化更加快速，只记一个 leader + g + g
 
 ## 显示git面板
 - leader + g + g
