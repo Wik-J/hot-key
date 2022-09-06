@@ -1,0 +1,284 @@
+{
+  "workbench.settings.editor": "json",
+  "files.autoSaveDelay": 2000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.colorTheme": "Eva Dark Italic",
+  "guides.active.enabled": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": ".",
+      "color": "#e16c96",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "gitlens.defaultDateShortFormat": null,
+  "gitlens.defaultDateFormat": null,
+
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 150,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+
+  // vim
+  "vim.sneak": true,
+  "vim.easymotion": true,
+  "vim.leader": "<Space>", // 按键映射
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    },
+    {
+      // 删除函数
+      "before": ["<Leader>", "d", "f"],
+      "after": ["V", "$", "%", "d"]
+    },
+    {
+      // 格式化代码
+      "before": ["<Leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      // 重命名函数名
+      "before": ["<Leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Leader>", "["],
+      "commands": [
+        {
+          "command": "editor.fold"
+        },
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": ["$", "%"]
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<Leader>", "]"],
+      "commands": [
+        {
+          "command": "editor.unfold"
+        }
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "after": ["s"]
+    },
+    {
+      "before": ["F"],
+      "after": ["S"]
+    },
+    {
+      "before": ["s"],
+      "after": ["c", "l"]
+    },
+    {
+      "before": ["S"],
+      "after": ["^", "C"]
+    },
+    {
+      "before": ["<Leader>", "n", "d"],
+      "commands": ["explorer.newFolder"]
+    },
+    {
+      "before": ["<Leader>", "n", "f"],
+      "commands": ["explorer.newFile"]
+    },
+    {
+      "before": ["<Leader>", "g", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    // {
+    //   "before": ["<Leader>", "g", "s"],
+    //   "commands": ["git.stage"]
+    // },
+    // {
+    //   "before": ["<Leader>", "g", "u"],
+    //   "commands": ["git.unstage"]
+    // },
+    // {
+    //   "before": ["<Leader>", "g", "c"],
+    //   "commands": ["git.commit"]
+    // },
+    // {
+    //   "before": ["<Leader>", "g", "d", "f"],
+    //   "commands": ["git.openChange"]
+    // },
+    // {
+    //   "before": ["<Leader>", "g", "c", "l"],
+    //   "commands": ["git.clean"]
+    // }
+    {
+      "before": ["<space>", ";"],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "after": ["z"]
+    },
+    {
+      "before": ["F"],
+      "after": ["Z"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "after": ["s"]
+    },
+    {
+      "before": ["<space>", ";"],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+
+  "vspacecode.bindingOverrides": [
+    // {
+    //   // 删除
+    //   "keys": "g.s",
+    //   "position": -1
+    // },
+    // {
+    //   // 修改 or 添加
+    //   "keys": "g.s",
+    //   "name": "Go to line",
+    //   "type": "command",
+    //   "command": "workbench.action.gotoLine"
+    // },
+    // {
+    //   // 整体覆盖
+    //   "keys": "g",
+    //   "name": "Go...",
+    //   "type": "bindings",
+    //   "bindings": [
+    //     {
+    //       "keys": "g.s",
+    //       "name": "Go to line",
+    //       "type": "command",
+    //       "command": "workbench.action.gotoLine"
+    //     }
+    //   ]
+    // }
+  ],
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'MesloLGS NF'",
+  "terminal.external.osxExec": "iTerm.app"
+}
